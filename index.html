@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Button Example</title>
+    <style>
+        #noButton {
+            background-color:aquamarine;
+            color: black;
+            border: none solid black;
+            margin-top:-90px;
+            margin-left: 150px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: top 0.5s, left 0.5s; /* Smooth movement */
+            
+        }
+        .gi{
+            margin: 100px 0 0 200px;
+            width:70%;
+            height:250px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        #Button{
+            background-color:aquamarine;
+            color: black;
+            border: none solid black;
+            margin-left: -130px;
+            margin-top: -90px;
+            gap: 100px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h2{
+            margin: 100px 0 0 200px;
+            width:70%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>A cuteeee dateeee 🌷🌹</h1>
+    <h2>wanna go on a date?</h2>
+    <a href =https://snehajain7.github.io/date1><button id="Button">noooo</button></a></div>
+    <button id="noButton">yesss</button>
+    <div class="gi">
+        <img src="g1.mp4" alt="Descriptive text of GIF">
+    </div>
+    
+
+    <script>
+        document.getElementById("noButton").onclick = function() {
+            // Generate random positions within the window boundaries
+            var randomTop = Math.random() * (window.innerHeight - 50);
+            var randomLeft = Math.random() * (window.innerWidth - 100);
+
+            // Move the button to the new random position
+            this.style.top = randomTop + "px";
+            this.style.left = randomLeft + "px";
+        };
+    </script>
+</body>
+</html>
